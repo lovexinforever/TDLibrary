@@ -1,4 +1,4 @@
-package com.tim.widgetlibraby;
+package com.tim.tdlibrary;
 
 import org.junit.Test;
 

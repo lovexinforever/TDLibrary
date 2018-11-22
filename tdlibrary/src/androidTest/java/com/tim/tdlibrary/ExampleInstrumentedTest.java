@@ -1,4 +1,4 @@
-package com.tim.widgetlibraby;
+package com.tim.tdlibrary;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.tim.widgetlibraby.test", appContext.getPackageName());
+        assertEquals("com.tim.tdlibrary.test", appContext.getPackageName());
     }
 }
