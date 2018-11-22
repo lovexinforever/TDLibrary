@@ -119,7 +119,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "TDLibrary"  //Repository名字 需要自己在bintray网站上先添加
-        name = "TDLibrary"// 发布到Bintray上的项目名字，这里的名字不是compile 'com.ansen.library:circleimage:1.0.1'中的circleimage。
+        name = "tdlibrary"// 发布到Bintray上的项目名字，这里的名字不是compile 'com.ansen.library:circleimage:1.0.1'中的circleimage。
         userOrg = 'timding'//Bintray的组织id
         websiteUrl = siteUrl
         vcsUrl = gitUrl
