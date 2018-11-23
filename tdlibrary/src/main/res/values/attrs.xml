@@ -20,4 +20,10 @@
         <!--输入框背景透明度 -->
         <attr name="icv_text_bg_alpha" format="integer" />
     </declare-styleable>
+
+    <!-- 横向跑马灯-->
+    <declare-styleable name="MarqueeTextView" >
+        <attr name="text_color" format="color|reference" />
+        <attr name="text_size" format="dimension|reference"/>
+    </declare-styleable>
 </resources>

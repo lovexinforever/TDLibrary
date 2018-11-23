@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivationActivity" />
+        <activity android:name=".MarqueeActivity" />
     </application>
 
 </manifest>

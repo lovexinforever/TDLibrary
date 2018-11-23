@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-    private String [] data ={"验证码"};
+    private String [] data ={"验证码","横向跑马灯"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
                 switch (i) {
                     case 0 :
                         MainActivity.this.startActivity(new Intent(MainActivity.this, ActivationActivity.class));
+                        break;
+
+                    case 1:
+                        MainActivity.this.startActivity(new Intent(MainActivity.this, MarqueeActivity.class));
                         break;
                     default:
                         break;
