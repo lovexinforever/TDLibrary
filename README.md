@@ -1,6 +1,6 @@
 <img src="screenshots/TD.png" width="200">
 
-# Colorful
+# TDLibrary
 [![Release](https://jitpack.io/v/lovexinforever/TDLibrary.svg)](https://jitpack.io/#lovexinforever/TDLibrary) [![Build Status](https://travis-ci.org/garretyoder/Colorful.svg?branch=master)](https://travis-ci.org/garretyoder/Colorful)
 
 
