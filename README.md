@@ -2,7 +2,7 @@
 
 # TDLibrary
 [ ![Download](https://api.bintray.com/packages/timding/TDLibrary/tdlibrary/images/download.svg) ](https://bintray.com/timding/TDLibrary/tdlibrary/_latestVersion)
-[ ![QQ](https://img.shields.io/badge/QQ-514387544-orange.svg) ](https://timding.top)
+[ ![QQ](https://img.shields.io/badge/QQ-514387454-orange.svg) ](https://timding.top)
 
 
 TDLibrary 是一个 android 上面经常用到的控件库和一些工具类.
