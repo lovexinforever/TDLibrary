@@ -85,3 +85,26 @@ java 中监听输入框内容变化
             }
         });
 ```
+
+### 横向滚动的跑马灯
+
+#### 效果
+![跑马灯](https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/blog_photos/marquee_text.gif)
+
+#### 使用
+在 xml 中引用控件
+```
+<com.tim.tdlibrary.marquee.MarqueeTextView
+        android:id="@+id/text"
+        app:text_color="#ff77dd"
+        app:text_size="@dimen/sp_15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+```
+java 中调用 setText 方法
+```
+MarqueeTextView marqueeTextView = findViewById(R.id.text);
+
+        marqueeTextView.setText("测试测试测试发的卡积分考虑到撒酒疯林科大实际付款老司机发的可使肌肤都是框架范德萨开了房觉得上路");
+```
+
