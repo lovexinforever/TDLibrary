@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-    private String [] data ={"验证码","横向跑马灯"};
+    private String [] data ={"验证码","横向跑马灯","LabelView"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
                     case 1:
                         MainActivity.this.startActivity(new Intent(MainActivity.this, MarqueeActivity.class));
+                        break;
+
+                    case 2:
+                        MainActivity.this.startActivity(new Intent(MainActivity.this, LabelViewActivity.class));
                         break;
                     default:
                         break;

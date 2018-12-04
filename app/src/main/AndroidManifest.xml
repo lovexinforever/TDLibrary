@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".ActivationActivity" />
         <activity android:name=".MarqueeActivity" />
+        <activity android:name=".LabelViewActivity" />
     </application>
 
 </manifest>
