@@ -1,0 +1,52 @@
+language: android
+jdk: oraclejdk8
+sudo: true
+
+android:
+  components:
+  - tools
+  - platform-tools
+  - tools
+  - build-tools-27.0.3
+  - android-27
+  - sys-img-armeabi-v7a-android-27
+  - extra-android-support
+  - extra-android-m2repository
+  - extra-google-m2repository
+  - add-on
+  - extra
+  licenses:
+  - android-sdk-preview-license-52d11cd2
+  - android-sdk-license-.+
+  - google-gdk-license-.+
+
+before_cache:
+- rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+- rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
+  - "$HOME/.android/build-cache"
+
+before_script:
+- chmod +x gradlew
+
+script:
+- "./gradlew assembleRelease"
+
+deploy:
+  provider: releases
+  api_key:
+    secure: BT3pEbzLeRSjoXHNhrQ5BW9mJbrL+VKFs8gwHcfy47b6exJ2p+jcx6D7yZNw5ObxPQGAEjqdNljOlMedzGY8awKv5GE1QbmOTBQGj1Sw6GaNXA19HvbM23Zd/hAc4Q+zg20kaokNME1EK7ctj5nGje99MTzO81NaA8U0flRVo7XMPGDruI1q3ZX6qH4CrtyMfH3g/9C1AsxryfmZmIvSEAOxvCpK1un+1BAvmH0A09ziEIfV7CU8/viH7XEGg8U+OAgJXbPkvWKdJo/jkiF21gVA45ZjP+JbVm8M8zVoiYmrRXhCwEGgExJm9TpmZTKFEEmlnNpGdYhrsz8RUXe8XsjD+ZgrtsDsIGf+Ph5jkip2qjX8RSJkQ9H7l2t8XC8yVamzsgnf8aC+JKysUIR9OYdpNkp4s4faNCj3EX4Ga5dhnq1DSEl+OvxaXHLm4nt9P4zNeMeyJtXA/g2nBhNf156xn0LTk6PzAOeOckQ21vSAQ6O4GAyzfXJt8o/eHwm7GjagBl7UUYPvWiKd7OgO+auxDM1haDA9BQ/6IMXNtCXTIHBa31G5xXEjkiPDV6gFY1XILJg9MNd23S1pGbD4IGxEj4WOtFrraMyVMvGHsv8ohSCHFliH3ysTTnPfNlksg1LVEBNpK8Y1m+9d+2S1V8KbqvX/8u+/ph3w2az6dMI=
+  file: app/outputs/TDLibrary.apk
+  skip_cleanup: true
+  on:
+    repo: lovexinforever/TDLibrary
+    tags: true
+    all_branches: true
+
+
+notifications:
+  email:
+  - tim_ding@qq.com
