@@ -21,7 +21,7 @@ Copyright 2018 TIMDING
 Add TDLibrary as a dependency to your `build.gradle`
 ```groovy
 dependencies {
-    implementation 'com.tim:tdlibrary:1.0.2'
+    implementation 'com.tim:tdlibrary:1.0.3'
 }
 ```
 
@@ -40,7 +40,7 @@ allprojects {
  Add the dependency
  ```
  dependencies {
-	        implementation 'com.github.lovexinforever:TDLibrary:v1.0.2'
+	        implementation 'com.github.lovexinforever:TDLibrary:v1.0.3'
 	}
  ```
 
@@ -107,6 +107,49 @@ MarqueeTextView marqueeTextView = findViewById(R.id.text);
 
         marqueeTextView.setText("测试测试测试发的卡积分考虑到撒酒疯林科大实际付款老司机发的可使肌肤都是框架范德萨开了房觉得上路");
 ```
+
+### 视图标签
+
+#### 效果
+![视图标签](https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/blog_photos/Screenshot_1544007966.png)
+#### 使用
+在 xml 中引用控件
+```
+<com.tim.tdlibrary.laberview.LabelButtonView
+            android:id="@+id/labelbutton"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="#03a9f4"
+            android:gravity="center"
+            android:text="Button"
+            android:textColor="#ffffff"
+            app:label_backgroundColor="#C2185B"
+            app:label_distance="20dp"
+            app:label_height="20dp"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="HD"
+            app:label_textSize="12sp"
+            app:label_textStyle="BOLD"/>
+
+            <com.tim.tdlibrary.laberview.LabelTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#212121"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="TextView"
+            android:textColor="#ffffff"
+            app:label_backgroundColor="#03A9F4"
+            app:label_distance="15dp"
+            app:label_orientation="LEFT_TOP"
+            app:label_text="POP"
+            app:label_textSize="10sp"
+            app:label_textStyle="BOLD_ITALIC"/>
+```
+
 
 
 
